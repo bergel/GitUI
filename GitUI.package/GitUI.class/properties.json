@@ -1,0 +1,14 @@
+{
+	"category" : "GitUI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GitUI",
+	"pools" : [
+		 ],
+	"super" : "MCWorkingCopyBrowser",
+	"type" : "normal" }
