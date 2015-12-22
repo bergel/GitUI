@@ -1,10 +1,4 @@
 as yet unclassified
 commitAndPush
-	self saveVersion.
+	[ self basicSaveVersionIn: self repository. self halt. self gitPush ] fork
 	
-	"Strange I need to do this"
-	(Delay forSeconds: 1) wait.
-	
-	self repository ifNotNil: [ :repos | 
-		(MCFileTreeGitRepositoryInspector repository: repos workingCopy: workingCopy) gitPush
-		]
