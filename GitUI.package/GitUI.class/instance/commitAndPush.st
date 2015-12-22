@@ -1,4 +1,5 @@
 as yet unclassified
 commitAndPush
-	[ self basicSaveVersionIn: self repository. self halt. self gitPush ] fork
+	"Commit and push the selected package in the selected git repository"
+	[ self basicSaveVersionIn: self repository. self gitPush ] fork
 	
